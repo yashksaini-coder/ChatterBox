@@ -1,6 +1,7 @@
-# 📚💻Summer Internship Project ☀️
-
-This summer internship project provided us with hands-on experience in developing a real-time chat application. We learned to integrate front-end and back-end technologies, manage databases, and implement user authentication, enhancing our practical skills and teamwork.
+<div>
+    <a href="https://github.com/yashksaini-coder">
+    <img src="https://socialify.git.ci/yashksaini-coder/Summer-Internship-Project/image?description=1&descriptionEditable=This%20summer%20internship%20project%20provided%20us%20with%20hands-on%20experience%20in%20developing%20a%20real-time%20chat%20application.&font=Raleway&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark" alt="Summer-Internship-Project" width="640" height="320" />
+</div>
 
 ## Index 📖
 
@@ -140,5 +141,3 @@ Our real-time chat application meets these demands with features like real-time 
 - W3SCHOOLS:- <https:-//www.w3schools.com/>
 - TUTORIALSPOINT:- <https:-//www.tutorialspoint.com/index.htm>
 - STACKOVERFLOW:- <https:-//stackoverflow.com/>
-
-:sparkles:
