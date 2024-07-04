@@ -7,9 +7,10 @@
 
 This summer internship project provided us with hands-on experience in developing a real-time chat application. We learned to integrate front-end and back-end technologies, manage databases, and implement user authentication, enhancing our practical skills and teamwork.
 
+---
 ## Index 📖
 
-1. **[ChatterBox Project 🗣️💬](#chatterbox-project-)**
+1. **[ChatterBox Project 💬](#chatterbox-project-💬)** 
 2. **[Project Details](#project-details-📝)** :-
    - [Introduction](#introduction-📚)
    - [Description](#description-📝)
@@ -24,7 +25,7 @@ This summer internship project provided us with hands-on experience in developin
 
 ---
 
-## ChatterBox 🗣️💬
+## ChatterBox Project 💬
 
 ChatterBox is a real-time chat application designed for seamless communication between users. It features instant messaging, media sharing, and real-time notifications to ensure fluid conversations. The front end is built with HTML, CSS, and JavaScript, while the back end uses Flask, MongoDB, and Python. User authentication and administrative controls ensure data privacy and security. This project aims to provide a reliable and user-friendly platform for instant communication.
 
