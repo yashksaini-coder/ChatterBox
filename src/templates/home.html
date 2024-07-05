@@ -1,0 +1,39 @@
+<html lang="hindi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ChatterBox</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    </head>
+<link rel="icon" type="image/jpeg" href="https://static.vecteezy.com/system/resources/previews/022/750/436/non_2x/3d-home-icon-free-png.png">
+<body>
+<div class="wrapper">
+    <section class="users">
+    <header>
+    <div class="content">
+        <img src="{{ url_for('static', filename='images/pexels-pixabay-326055.jpg') }}" alt="userphoto">
+        <div class="details">
+            <div class="username">User Name</div>
+            <div class="active">Active now</div>
+        </div>
+    </div>
+    <a href="#" class ="logout">Logout</a>
+</header><br>
+<div class="search">
+    <input type="text" name="a" placeholder="Enter name to search...">
+</div>
+<div class="users-list">
+    <div class="content">
+        <img src="{{ url_for('static', filename='images/pexels-pixabay-326055.jpg') }}" alt="userphoto">
+        <div class="details">
+            <div class="username">User Name</div>
+            <div class="message">new message</div>
+        </div>
+    </div>
+    <div class="status"></div>   
+</div>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatterBox</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <img src="{{ url_for('static', filename='images/pexels-pixabay-326055.jpg') }}" alt="userphoto">
+            <h2>Username</h2>
+            <span>Active now</span>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message">
+                <div class="sent"></div>
+                <div class="received"></div>
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    </script>
+</body>
+</html>
