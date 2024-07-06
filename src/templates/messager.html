@@ -9,8 +9,9 @@
 <body>
     <div class="container">
         <div class="chat-header">
-            <img src="{{ url_for('static', filename='images/pexels-pixabay-326055.jpg') }}" alt="userphoto">
-            <h2>Username</h2>
+            <img src="{{ url_for('static', filename='images/backarrow.png') }}" alt="arrow" id="arrow" onclick="back()">
+            <img src="{{ url_for('static', filename='images/pexels-pixabay-326055.jpg') }}" id="img" alt="userphoto">
+            <h2>{{ result }}</h2>
             <span>Active now</span>
         </div>
         <div class="chat-messages" id="chat-messages">
@@ -24,6 +25,6 @@
             <button id="send-button">Send</button>
         </div>
     </div>
-    </script>
 </body>
+<script type="text/javascript" src="{{ url_for('static', filename='message.js') }}"></script>
 </html>
