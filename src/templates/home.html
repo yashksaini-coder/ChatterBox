@@ -1,4 +1,5 @@
-<html lang="hindi">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -12,28 +13,35 @@
     <section class="users">
     <header>
     <div class="content">
-        <img src="{{ url_for('static', filename='images/pexels-pixabay-326055.jpg') }}" alt="userphoto">
+        <img src= {{ result[1] }} alt="userphoto">
         <div class="details">
-            <div class="username">User Name</div>
+            <div class="username" > {{ result[0] }} </div>
             <div class="active">Active now</div>
         </div>
     </div>
-    <a href="#" class ="logout">Logout</a>
+    <form action="/logout" method="post"><input type="submit" value="Logout"></form>
 </header><br>
 <div class="search">
-    <input type="text" name="a" placeholder="Enter name to search...">
+    <input type="text" name="a" id="searchInput" autocomplete="off" placeholder="Enter name to search...">
 </div>
-<div class="users-list">
-    <div class="content">
-        <img src="{{ url_for('static', filename='images/pexels-pixabay-326055.jpg') }}" alt="userphoto">
-        <div class="details">
-            <div class="username">User Name</div>
-            <div class="message">new message</div>
-        </div>
+<div class="scrollable-container">
+    {% for item in result[2] %}
+    <div class="users-list" id="users-list" onclick="handleClick(event)">
+    <a href="{{ url_for('message') }}">
+        <!-- <a href="#"> -->
+            <img src={{ item[0] }} alt="userphoto">
+            <div class="details">
+                <div class="username" id="username"> {{ item[1] }} </div>
+                <div class="message">new message</div>
+            </div>  
+            <input type="hidden"  class="hidden-input" name="hide" id="hide" value={{ item[1]}}>
+        </a>
+        <div class="status"></div>
     </div>
-    <div class="status"></div>   
+    {% endfor %}
 </div>
     </section>
 </div>
 </body>
+<script type="text/javascript" src="{{ url_for('static', filename='home.js') }}"></script>
 </html>
