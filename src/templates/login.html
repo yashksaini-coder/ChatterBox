@@ -16,8 +16,18 @@ img{
 <div class="wrapper">
     <section class="form login">
     <header>ChatterBox</header>
-        <form action="#"  enctype="multipart/form-data" autocomplete="off" method="post">
-            <div class="error-txt"></div>
+        <form action="./checkdata"  enctype="multipart/form-data" autocomplete="off" method="post">
+            <div class="error-txt" id="error-txt"><p>{{ result }}</p></div>
+            <div class="name-details">
+                <div class="field input">
+                    <input type="text" name="fname" required>
+                    <span>First Name</span>
+                </div>
+                <div class="field input">
+                    <input type="text" name="lname" required>
+                    <span>Last Name</span>
+                </div>
+                </div>
                 <div class="field input">
                     <input type="email" name="email"  required>
                     <span>Email</span>
@@ -30,8 +40,9 @@ img{
                     <input type="submit" value="Continue to Chat">
                 </div>
         </form>
-        <div class="link">Not yet signed up? <a href="index.html">Signup now</a></div>
+        <div class="link"><form action="/signin" method="post">Not yet signed up?&nbsp;&nbsp;<input type="submit" value="Signup now"></form></div>
     </section>
 </div>
 </body>
+<script type="text/javascript" src="{{ url_for('static', filename='data.js') }}"></script>
 </html>
