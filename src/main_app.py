@@ -5,7 +5,7 @@ import os
 import zipfile
 import tempfile
 def get_user_id():
-    data = pd.read_excel("database\\userdata.xlsx", engine="openpyxl")
+    data = pd.read_excel("C:\\Users\\yashk\\Desktop\\git\\ChatterBox\\src\\database\\userdata.xlsx", engine="openpyxl")
     userid=0
     for index, row in data.iterrows():
         if index:
@@ -13,34 +13,39 @@ def get_user_id():
         else:
             userid=0
     return userid
+
+
 def data_check_into_database(fname,lname,email,password):
     check_condition="f"
     try:
-        data = pd.read_excel("C:\\Users\\DEEPANSHU\\Documents\\all project\\ChatterBox\\database\\userdata.xlsx", engine="openpyxl")
+        data = pd.read_excel("C:\\Users\\yashk\\Desktop\\git\\ChatterBox\\src\\database\\userdata.xlsx", engine="openpyxl")
         for index, row in data.iterrows():
             if (str(email) == str(row.loc['email']) and str(password) == str(row.loc['password']) and str(fname) == str(row.loc['f_name']) and str(lname) == str(row.loc['l_name'])):
                 check_condition="t"
     except Exception as e:
         check_condition="Error : "+str(e)
     return check_condition
+
+
 def store_data(user_id,f_name,l_name,email,password,image,currenttime):
     temp_variable=""
     try:
-        database_name = pd.read_excel("database\\userdata.xlsx", engine="openpyxl")
+        database_name = pd.read_excel("C:\\Users\\yashk\\Desktop\\git\\ChatterBox\\src\\database\\userdata.xlsx", engine="openpyxl")
         user_id_calculate=user_id
         record={"user_id":user_id_calculate,"f_name":f_name,"l_name":l_name,"email":email,"password":password,"image":image,"time":currenttime}
         df = pd.concat([database_name, pd.DataFrame([record])], ignore_index=True)
-        df.to_excel('database\\userdata.xlsx', index=False)
+        df.to_excel('C:\\Users\\yashk\\Desktop\\git\\ChatterBox\\src\\database\\userdata.xlsx', index=False)
         temp_variable="success"
     except zipfile.BadZipFile as e:
         temp_variable="Error : "+str(e)
     return temp_variable
+
 def get_user_info(email,password,fname):
     getusername="A"
     getuserimage="pexels-pixabay-326055.jpg"
     list_1=[]
     try:
-        data = pd.read_excel("C:\\Users\\DEEPANSHU\\Documents\\all project\\ChatterBox\\database\\userdata.xlsx", engine="openpyxl")
+        data = pd.read_excel("C:\\Users\\yashk\\Desktop\\git\\ChatterBox\\src\\database\\userdata.xlsx", engine="openpyxl")
         for index, row in data.iterrows():
             if str(email) == str(row.loc['email']) and str(password) == str(row.loc['password']) and str(fname) == str(row.loc['f_name']):
                 getusername=str(row.loc['f_name'])
@@ -51,20 +56,26 @@ def get_user_info(email,password,fname):
         getusername="Error : "+str(e)
     return [getusername, getuserimage,list_1]
 app = Flask(__name__)
+
 @app.route('/')
+
 def index():
     get_user_id()
     return render_template('index.html')
 @app.route('/signin', methods=['POST'])
+
 def signin():
     return render_template('index.html')
 @app.route('/login', methods=['POST'])
+
 def login():
     return render_template('login.html')
 @app.route('/logout', methods=['POST'])
+
 def logout():
     return render_template('index.html')
 @app.route('/data', methods=['POST'])
+
 def userdata():
     try:
         user_id=get_user_id()
