@@ -3,9 +3,12 @@ import pandas as pd
 import datetime
 import os
 import zipfile
-import tempfile
+def excel_path():
+    path="database\\userdata.xlsx"
+    return path
 def get_user_id():
-    data = pd.read_excel("C:\\Users\\yashk\\Desktop\\git\\ChatterBox\\src\\database\\userdata.xlsx", engine="openpyxl")
+    path=excel_path()
+    data = pd.read_excel(path, engine="openpyxl")
     userid=0
     for index, row in data.iterrows():
         if index:
@@ -18,7 +21,8 @@ def get_user_id():
 def data_check_into_database(fname,lname,email,password):
     check_condition="f"
     try:
-        data = pd.read_excel("C:\\Users\\yashk\\Desktop\\git\\ChatterBox\\src\\database\\userdata.xlsx", engine="openpyxl")
+        path=excel_path()
+        data = pd.read_excel(path, engine="openpyxl")
         for index, row in data.iterrows():
             if (str(email) == str(row.loc['email']) and str(password) == str(row.loc['password']) and str(fname) == str(row.loc['f_name']) and str(lname) == str(row.loc['l_name'])):
                 check_condition="t"
@@ -30,11 +34,12 @@ def data_check_into_database(fname,lname,email,password):
 def store_data(user_id,f_name,l_name,email,password,image,currenttime):
     temp_variable=""
     try:
-        database_name = pd.read_excel("C:\\Users\\yashk\\Desktop\\git\\ChatterBox\\src\\database\\userdata.xlsx", engine="openpyxl")
+        path=excel_path()
+        database_name = pd.read_excel(path, engine="openpyxl")
         user_id_calculate=user_id
         record={"user_id":user_id_calculate,"f_name":f_name,"l_name":l_name,"email":email,"password":password,"image":image,"time":currenttime}
         df = pd.concat([database_name, pd.DataFrame([record])], ignore_index=True)
-        df.to_excel('C:\\Users\\yashk\\Desktop\\git\\ChatterBox\\src\\database\\userdata.xlsx', index=False)
+        df.to_excel(path, index=False)
         temp_variable="success"
     except zipfile.BadZipFile as e:
         temp_variable="Error : "+str(e)
@@ -45,7 +50,8 @@ def get_user_info(email,password,fname):
     getuserimage="pexels-pixabay-326055.jpg"
     list_1=[]
     try:
-        data = pd.read_excel("C:\\Users\\yashk\\Desktop\\git\\ChatterBox\\src\\database\\userdata.xlsx", engine="openpyxl")
+        path=excel_path()
+        data = pd.read_excel(path, engine="openpyxl")
         for index, row in data.iterrows():
             if str(email) == str(row.loc['email']) and str(password) == str(row.loc['password']) and str(fname) == str(row.loc['f_name']):
                 getusername=str(row.loc['f_name'])
