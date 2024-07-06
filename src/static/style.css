@@ -33,13 +33,12 @@ body{
 }
 .form form .error-txt{
     color: #721c72;
-    background:#f8d7da;
+    background:#fff;
     padding:8px 10px;
     text-align:center;
     border-radius:5px;
-    margin-bottom:10px;
-    border:1px solid #f5c6cb;
-    display: none;
+    margin-bottom:20px;
+    border:none;
 }
 .form form .name-details{
     display: flex;
@@ -123,15 +122,20 @@ body{
     content: "\f070";
     color:#333;
 }
-.form .link{
+.form .link form{
     text-align: center;
     margin:10px 0;
     font-size:17px;
+    display: flex;
+    justify-content: center;
 }
-.form .link a{
+.form .link form input[type="submit"]{
     color:#333;
+    background-color: transparent;
+    border:none;
+    outline:none;
 }
-.form .link a:hover{
+.form .link form input[type="submit"]:hover{
     text-decoration: underline;
 }
 .users{
@@ -157,14 +161,14 @@ body{
     width:50px
 }
 .users header .content .details .username{
-    margin-left: 8px;
+    margin-left: 12px;
     font-size: large;
 }
 .users header .content .details .active{
     font-size: small;
     margin-left: 15px;
 }
-.users header .logout{
+.users header form input[type="submit"]{
     color:#fff;
     font-size:17px;
     padding:7px 15px;
@@ -210,21 +214,24 @@ body{
 .users-list{
     max-height: 350px;
     overflow-y: auto;
+    padding: 15px;
+    border-radius: 10px;
 }
-.users-list .content img{
+.users-list  img{
     height:40px;
     width:40px;
     margin-right:0px;
 }
-.users-list .content{
+.users-list a{
     display: flex;
     align-items: center;
+    width: 100%;
 }
-.users-list .content .details .username{
+.users-list a .details .username{
     margin-left: 8px;
     font-size:medium;
 }
-.users-list .content .details .message{
+.users-list a .details .message{
     font-size:small;
     margin-left: 15px;
     color: rgb(69, 69, 250);
@@ -234,6 +241,19 @@ body{
     width: 10px;
     height: 10px;
     border-radius: 50% ;
+}
+.users-list:hover {
+    background-color: antiquewhite;
+}
+.scrollable-container {
+    height: 300px; /* Or any fixed height */
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+/* WebKit and Chromium-based browsers (Chrome, Edge, Opera, etc.) */
+.scrollable-container::-webkit-scrollbar {
+display: none;
 }
 .container {
     width: 450px;
@@ -247,7 +267,17 @@ body{
     color: #fff;
     padding: 10px;
 }
-.container .chat-header img{
+.container .chat-header #arrow{
+    width:25px;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    float: left;
+    margin-left: 10px;
+    margin-right: 25px;
+    transform: rotate(270deg);
+}
+.container .chat-header #img{
     width:50px;
     height:50px;
     float: left;
