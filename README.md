@@ -312,11 +312,12 @@ To keep your forked repository up to date with the original repository, follow t
 
 ## Contributors
 
-<!-- | Column 1 | Column 2 | Column 3 | Column 4 |
-|----------|----------|----------|----------|
-| Row 1    | Row 1    | Row 1    | Row 1    |
-| Row 2    | Row 2    | Row 2    | Row 2    |
-| Row 3    | Row 3    | Row 3    | Row 3    |
- -->
+Wanna be a part of this project? Check out the [Contributing Guidelines](CONTRIBUTING.md) and start contributing.
+Meet our amazing contributors:
 
-Thank you for contributing to our project! Your help is greatly appreciated in making ChatterBox even better. 😊
+| Name | Github | Linkedin | Instagram | Snapchat |
+|----------|----------|----------|----------|----------|
+| ![Deepanshu Antil](https://img.shields.io/badge/Deepanshu%20Antil-184e77) | [![](https://img.shields.io/badge/GitHub-1e6091?style=flat&logo=github&logoColor=white)](https://github.com/deepanshu414)  | [![](https://img.shields.io/badge/LinkedIn-1a759f?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deepanshu-antil-865508263/)  | [![](https://img.shields.io/badge/Instagram-168aad?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/divyansh_antil4/) | [![](https://img.shields.io/badge/Snapchat-34a0a4?style=flat&logo=snapchat&logoColor=black)](https://www.snapchat.com/add/divyansh-12345?share_id=MLwWklnP3z8&locale=en-US)|
+| ![Paras Mutreja](https://img.shields.io/badge/Paras%20Mutreja-004b23) | [![](https://img.shields.io/badge/GitHub-007200?style=flat&logo=github&logoColor=white)](https://github.com/parasmutreja) | [![](https://img.shields.io/badge/LinkedIn-008000?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paras-mutreja-a738402ab/?originalSubdomain=in) | [![](https://img.shields.io/badge/Instagram-38b000?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/parasmutreja45/) | ![](https://img.shields.io/badge/NOT%20AVIALABLE-f6f6f6) |
+| ![Yash K. Saini](https://img.shields.io/badge/Yash%20Kumar%20Saini-03045e)| [![](https://img.shields.io/badge/GitHub-001f54?style=flat&logo=github&logoColor=white)](https://github.com/yashksaini-coder)  | [![](https://img.shields.io/badge/LinkedIn-034078?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yashksaini/)  | [![](https://img.shields.io/badge/Instagram-1282a2?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/yashksaini.codes/)| ![](https://img.shields.io/badge/NOT%20AVIALABLE-f6f6f6) |
+
