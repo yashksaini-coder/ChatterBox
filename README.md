@@ -307,18 +307,12 @@ To keep your forked repository up to date with the original repository, follow t
 ---
 
 ## Contributors
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<div align="center">
-    <a href="https://github.com/yashksaini-coder/ChatterBox/graphs/contributors">
-        <img src="https://contrib.rocks/image?repo=yashksaini-coder/ChatterBox" />
-    </a>
-</div>
+
+<!-- | Column 1 | Column 2 | Column 3 | Column 4 |
+|----------|----------|----------|----------|
+| Row 1    | Row 1    | Row 1    | Row 1    |
+| Row 2    | Row 2    | Row 2    | Row 2    |
+| Row 3    | Row 3    | Row 3    | Row 3    |
+ -->
 
 Thank you for contributing to our project! Your help is greatly appreciated in making ChatterBox even better. 😊
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
