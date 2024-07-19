@@ -1,8 +1,14 @@
 <div align="center">
+   <div>
+      <img src="https://socialify.git.ci/yashksaini-coder/ChatterBox/image?forks=1&issues=1&name=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto" alt="ChatterBox" width="640" height="320" />
+   </div>
+   <br>
+   
+   <div>
    
    ![Repo-Size](https://img.shields.io/github/repo-size/yashksaini-coder/ChatterBox)
    ![GitHub language count](https://img.shields.io/github/languages/count/yashksaini-coder/ChatterBox)
-   ![GitHub top language](https://img.shields.io/github/languages/top/yashksaini-coder/ChatterBox)
+   ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
    ![GitHub last commit](https://img.shields.io/github/last-commit/yashksaini-coder/ChatterBox)
    ![GitHub issues](https://img.shields.io/github/issues/yashksaini-coder/ChatterBox)
    ![GitHub pull requests](https://img.shields.io/github/issues-pr/yashksaini-coder/ChatterBox)
@@ -11,8 +17,12 @@
    ![GitHub watchers](https://img.shields.io/github/watchers/yashksaini-coder/ChatterBox)
    ![GitHub contributors](https://img.shields.io/github/contributors/yashksaini-coder/ChatterBox)
    ![GitHub license](https://img.shields.io/github/license/yashksaini-coder/ChatterBox)
-
+   ![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square%29%5D%28http%3A%2F%2Fmakeapullrequest.com%29)
+   
+   </div>
 </div>
+
+---
 
 ## Table of Contents
 
