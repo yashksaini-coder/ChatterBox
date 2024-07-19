@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ChatterBox</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/all.min.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+    </head>
+<link rel="icon" type="image/png" href="{{url_for('static',filename='main_images/homeicon.png')}}">
+<body>
+<div class="loader" id="loading"></div>
+<div class="wrapper" id="wrapper">
+    <section class="users">
+    <header>    
+    <div class="content">
+        <img src= "{{ result[1] }}" alt="userphoto">
+        <div class="details">
+            <div class="username" id="mainusername"> {{ result[0] }} </div>
+            <input type="hidden" name="hid" id="hid" value="{{ result[4] }}">
+            <div class="active">Active now</div>
+        </div>
+    </div>
+    
+    <form action="/logout" method="post"><a href="{{ url_for('ai') }}"><img src="{{url_for('static',filename='main_images/aiicon.png')}}" id="ai" alt="ai"></a><input type="submit" value="Logout" onclick="logout()"></form>
+</header><br>
+<div class="search">
+    <label id="label">Select an user to start chat</label><input type="text" name="a" id="searchInput" autocomplete="off" placeholder="Enter name to search..."><i class="fa-solid fa-search" onclick="inputshow()" id="search"></i><i class="fa-solid fa-times" onclick="notinputshow()" id="cross"></i>
+</div>
+<div class="scrollable-container">
+    <input type="hidden"  class="hidden-input1" name="hide1" id="hide1" value="{{ result[3]}}">
+    {% for item in result[2] %}
+        <div class="users-list" id="users-list" onclick="handleClick(event)">
+    <a href="{{ url_for('message') }}">
+        <!-- <a href="#"> -->
+            <img src="{{ item[0] }}"" alt="userphoto" id="currentimage">
+            <div class="details">
+                <div class="username" id="username"> {{ item[1] }} </div>
+                <div class="message">new message</div>
+            </div>  
+            <input type="hidden"  class="hidden-input" name="hide" id="hide" value="{{ item[2]}}">
+        </a>
+        <div class="status"></div>
+    </div>
+    {% endfor %}
+</div>
+    </section>
+</div>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='js/home.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/load.js') }}"></script>
+</html>
