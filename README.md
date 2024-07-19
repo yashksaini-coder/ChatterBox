@@ -9,7 +9,6 @@
    ![Repo-Size](https://img.shields.io/github/repo-size/yashksaini-coder/ChatterBox)
    ![GitHub language count](https://img.shields.io/github/languages/count/yashksaini-coder/ChatterBox)
    ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
-   ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
    ![GitHub last commit](https://img.shields.io/github/last-commit/yashksaini-coder/ChatterBox)
    ![GitHub issues](https://img.shields.io/github/issues/yashksaini-coder/ChatterBox)
    ![GitHub pull requests](https://img.shields.io/github/issues-pr/yashksaini-coder/ChatterBox)
@@ -307,19 +306,19 @@ To keep your forked repository up to date with the original repository, follow t
    ```
 ---
 
-## Resources
+## Contributors
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<div align="center">
+    <a href="https://github.com/yashksaini-coder/ChatterBox/graphs/contributors">
+        <img src="https://contrib.rocks/image?repo=yashksaini-coder/ChatterBox" />
+    </a>
+</div>
 
-- HTML:- [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- CSS:- [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- JAVASCRIPT:- [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- PYTHON:- [https://docs.python.org/3.12/tutorial/index.html](https://docs.python.org/3.12/tutorial/index.html)
-- FLASK:- [https://python-adv-web-apps.readthedocs.io/en/latest/flask.html](https://python-adv-web-apps.readthedocs.io/en/latest/flask.html)
-- GIT:- [https://git-scm.com/doc](https://git-scm.com/doc)
-- MONGODB:- [https://www.mongodb.com/docs/](https://www.mongodb.com/docs/)
-- API:- [https://ai.google.dev/gemini-api/docs](https://ai.google.dev/gemini-api/docs)
-- GEEKSFORGEEKS:- [https://www.geeksforgeeks.org/](https://www.geeksforgeeks.org/)
-- MEDIUM:- [https://medium.com/](https://medium.com/)
-- W3SCHOOLS:- [https://www.w3schools.com/](https://www.w3schools.com/)
-- TUTORIALSPOINT:- [https://www.tutorialspoint.com/index.htm](https://www.tutorialspoint.com/index.htm)
-- STACKOVERFLOW:- [https://stackoverflow.com/](https://stackoverflow.com/)
+Thank you for contributing to our project! Your help is greatly appreciated in making ChatterBox even better. 😊
 
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
