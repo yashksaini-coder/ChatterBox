@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ChatterBox</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/all.min.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+    </head>
+<link rel="icon" type="image/jpeg" href="{{url_for('static',filename='main_images/indexicon.png')}}">
+<body >
+<style>
+img{
+    display:none;
+}
+</style>
+<div class="loader" id="loading"></div>
+<div class="wrapper" id="wrapper">
+    <section class="form signup">
+        <header>ChatterBox
+    </header>
+        <form action="./data" enctype="multipart/form-data" autocomplete="off" method="post">
+            <div class="error-txt" id="error-txt"><p>{{ result }}</p></div>
+            <div class="name-details">
+                <div class="field input">
+                    <input type="text" name="fname" required>
+                    <span>First Name</span>
+                </div>
+                <div class="field input">
+                    <input type="text" name="lname" required>
+                    <span>Last Name</span>
+                </div>
+                </div>
+                <div class="field input">
+                    <input type="email" name="email"  required>
+                    <span>Email</span>
+                </div>
+                <div class="field input">
+                    <div class="pas">
+                    <input type="password" name="password" required id="password">
+                    <span>Password</span>
+                    <i class="fa-solid fa-eye" id="eye" onclick="show()"></i>
+                    <i class="fa-solid fa-eye-slash" id="eye-close" onclick="notshow()"></i>
+                </div>
+                </div>
+                <div class="field image">
+                    <label>Select image</label>
+                    <input type="file" name="image"  required>
+                </div>
+                <div class="field button">
+                    <input type="submit" value="Continue to Chat">
+                </div>
+        </form>
+        <div class="link"><form action="/login" method="post">Already signed up?&nbsp;&nbsp;<input type="submit" value="Login now"></form></div>
+    </section>
+</div>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='js/data.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/load.js') }}"></script>
+</html>

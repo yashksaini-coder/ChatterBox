@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: "Mulish", sans-serif;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:#f7f7f7;
+    font-family: "Mulish", sans-serif;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 3px solid rgba(0, 102, 255, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #0066ff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #0066ff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #0066ff;
+    border-right: 3px solid #0066ff;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite;
+}
+
+.loader span {
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation: animate 2s linear infinite;
+}
+
+.loader span::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #00aeff;
+    top: -6px;
+    right: -8px;
+    box-shadow: 0 0 20px 5px #0066ff;
+}
+
+@keyframes animateC {
+    0% {
+    transform: rotate(0deg);
+    }
+
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+    transform: rotate(45deg);
+    }
+
+    100% {
+    transform: rotate(405deg);
+    }
+}
+.maindiv{
+    background: #fff;
+    margin-bottom: 0px;
+    width: 450px;
+    box-sizing: border-box;
+    display: none;
+    box-shadow:0 0 128px 0 rgba(0, 0, 0,0.1),0 32px 64px -48px rgba(0,0,0,0.5) ;    
+}
+div.container header{
+    display: flex;
+    background-color: #0077b6;;
+    color: white;
+    padding:25px 30px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    font-family: monospace;
+    margin:0;
+}
+.maindiv header div#home{
+    top: auto;
+    aspect-ratio: 1/1;
+    z-index: 10;
+    object-fit: cover;  
+    float: left;
+    cursor: pointer;
+}
+.maindiv header div#chat_options{
+    width: 100%;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+div#chat_options p{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 0.7px solid rgba(255, 255, 255, 0.511);
+    background-color: #0077b6;;
+}
+div#query_area{
+    display: flex;
+    /* background-color: #0077b6;; */
+    color: white;
+    padding:25px 30px;
+    margin-top:0px;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    font-family: monospace;
+}
+div#query_area div.text_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 1px 1px 4px black;
+}
+div#query_area textarea{
+    min-height: 2.2rem;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border:none;
+    outline: none;
+    font-size: 0.95rem;
+    width: 85%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 15%;
+    color: black;
+    resize: none;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+div#query_area textarea::-webkit-scrollbar {
+    display: none;
+}
+div#query_area button#submit{
+    position: absolute;
+    height: min-content;
+    padding: 0 !important;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    outline: none;
+    padding: 0.1rem 0.2rem !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    right: 1rem;
+}
+div#query_area button#submit span{
+    padding: 0 !important;
+}
+div.chats{
+    margin:20px;
+    /* width: 35vw; */
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+}
+.chats{
+    position: relative;
+    height: 300px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    -ms-overflow-style: none;
+}
+.chats .chat{
+    width: 80%;
+    margin-left: 8%;
+}
+.chats::-webkit-scrollbar {
+    display: none;
+}
+
+div.chats div.chat{
+    margin-bottom: 1.35rem;
+}
+div.chat div.user{
+    margin-bottom: 1.05rem;
+}
+div.chat div.user span, div.chat div.gemini span{
+    font-weight: 700;
+}
+div.user div:nth-child(1), div.gemini div:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+div.user img.avatar, div.gemini img.avatar{
+    height: 27px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgb(28, 27, 27);
+    outline: 0.1px solid rgba(255, 255, 255, 0.687);
+}
+div.user p, div.gemini p {
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+div.chat div.user p, div.chat div.gemini p{
+    margin-top: 0.5rem;
+}
+div.gemini p a{
+    color: rgb(0, 119, 255);
+}
+div.gemini p a:hover{
+    text-decoration: none;
+}
+div.chats div.chat h4:nth-child(2){
+    margin-top: 0.5rem;
+}
+div.user p, div.gemini p{
+    line-height: 1.5;
+}
+div#loading_div{
+    display: flex;
+    align-items: center;
+}
+span#loading{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid rgb(132, 132, 132);
+    border-top: 3px solid white;
+    animation: loading 0.35s linear infinite;
+    border-radius: 50%;
+}
+@keyframes loading {
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}

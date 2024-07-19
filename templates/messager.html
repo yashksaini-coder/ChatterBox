@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatterBox</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/all.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <img src="{{ url_for('static', filename='main_images/backarrow.png') }}" alt="arrow" id="arrow" onclick="back()">
+            <img src="" id="img" alt="userphoto">
+            <h2 id="h2"></h2>
+            <span>Active now</span>
+            <i class="fa-solid fa-desktop" id="screenshare"></i>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message" id="main_message">
+                <div class="sent" id="send"></div>
+                <div class="received" id="received"></div>
+            </div>
+            <div id="screen">
+            </div>
+        </div>
+        <div class="input-area">
+            <div id="cmsg">
+            <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off">
+            <div class="fileUploadWrapper">
+                <label for="file">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 337 337">
+                    <circle
+                    stroke-width="20"
+                    stroke="#6c6c6c"
+                    fill="none"
+                    r="158.5"
+                    cy="168.5"
+                    cx="168.5"
+                    ></circle>
+                    <path
+                    stroke-linecap="round"
+                    stroke-width="25"
+                    stroke="#6c6c6c"
+                    d="M167.759 79V259"
+                    ></path>
+                    <path
+                    stroke-linecap="round"
+                    stroke-width="25"
+                    stroke="#6c6c6c"
+                    d="M79 167.138H259"
+                    ></path>
+                </svg>
+                <span class="tooltip">Add an image</span>
+                </label>
+                <input type="file" id="file" name="file"   accept="image/*,video/*,audio/*" multiple >
+            </div>
+            <i class="fa-solid fa-microphone" id="mic-button"></i>
+            <i class="fa-solid fa-paper-plane" id="send-button" onclick="message()"></i>
+        </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='js/message.js') }}"></script>
+</html>
