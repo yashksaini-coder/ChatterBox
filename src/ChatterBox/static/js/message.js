@@ -150,9 +150,10 @@ async function loadFile(key,filename) {
     const extension = filename.slice(((filename.lastIndexOf(".") - 1) >>> 0) + 2).toLowerCase();
     let currentuserid = sessionStorage.getItem("current_user_id");
     if (extensions.includes("." + extension)) {
-        if (isTextFile("." + extension)) {
-            await handleTextFile(currentuserid,key,filename);
-        } else if ([".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg"].includes("." + extension)) {
+        // if (isTextFile("." + extension)) {
+        //     await handleTextFile(currentuserid,key,filename);
+        // }
+        if ([".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg"].includes("." + extension)) {
             await handleImageFile(currentuserid,key,filename);
         } else if ([".mp4", ".mov", ".avi", ".mkv", ".wmv", ".flv", ".webm"].includes("." + extension)) {
             await handleVideoFile(currentuserid,key,filename);
