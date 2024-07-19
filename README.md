@@ -1,8 +1,14 @@
 <div align="center">
+   <div>
+      <img src="https://socialify.git.ci/yashksaini-coder/ChatterBox/image?forks=1&issues=1&name=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto" alt="ChatterBox" width="640" height="320" />
+   </div>
+   <br>
+
+   <div>
    
    ![Repo-Size](https://img.shields.io/github/repo-size/yashksaini-coder/ChatterBox)
    ![GitHub language count](https://img.shields.io/github/languages/count/yashksaini-coder/ChatterBox)
-   ![GitHub top language](https://img.shields.io/github/languages/top/yashksaini-coder/ChatterBox)
+   ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
    ![GitHub last commit](https://img.shields.io/github/last-commit/yashksaini-coder/ChatterBox)
    ![GitHub issues](https://img.shields.io/github/issues/yashksaini-coder/ChatterBox)
    ![GitHub pull requests](https://img.shields.io/github/issues-pr/yashksaini-coder/ChatterBox)
@@ -11,8 +17,12 @@
    ![GitHub watchers](https://img.shields.io/github/watchers/yashksaini-coder/ChatterBox)
    ![GitHub contributors](https://img.shields.io/github/contributors/yashksaini-coder/ChatterBox)
    ![GitHub license](https://img.shields.io/github/license/yashksaini-coder/ChatterBox)
-
+   ![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square%29%5D%28http%3A%2F%2Fmakeapullrequest.com%29)
+   
+   </div>
 </div>
+
+---
 
 ## Table of Contents
 
@@ -32,6 +42,8 @@
    - [Admin Module](#admin-module)
 - [Conclusion](#conclusion)
 - [Contributing](#contributing)
+   - [Getting Started](#getting-started)
+   - [Keeping Your Fork Up to Date](#keeping-your-fork-up-to-date)
 - [Resources](#resources)
 
 
@@ -131,9 +143,15 @@ Our real-time chat application meets these demands with features like real-time 
 
 ## Contributing
 
-Thank you for your interest in contributing to our project! We welcome contributions from the community to help improve and enhance our work. This guide will walk you through the process of contributing using Git commands.
+<div>
+  <h2><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" width="35" height="35">Ready to Contribute?</h2>
+</div>
 
-Getting Started
+Kindly go through [CONTRIBUTING.md](CONTRIBUITING.md) to understand everything from setup to contributing guidelines.
+Thank you for your interest in contributing to our project! We welcome contributions from the community to help improve and enhance our work. This guide will walk you through the process of contributing using Git commands. Also, please follow our contribution guidelines, before contributing to the project.
+
+
+### Getting Started
 
 To contribute to our project, follow these steps:
 
@@ -168,7 +186,7 @@ To contribute to our project, follow these steps:
 
 7. **Create a Pull Request:** Go to the original repository on GitHub and click on the "New Pull Request" button. Fill in the necessary details and submit your pull request.
 
-Keeping Your Fork Up to Date
+### Keeping Your Fork Up to Date
 
 To keep your forked repository up to date with the original repository, follow these steps:
 
