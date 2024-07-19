@@ -3,12 +3,6 @@
       <img src="https://socialify.git.ci/yashksaini-coder/ChatterBox/image?forks=1&issues=1&name=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto" alt="ChatterBox" width="640" height="320" />
    </div>
    <br>
-
-   <div>
-   <div>
-      <img src="https://socialify.git.ci/yashksaini-coder/ChatterBox/image?forks=1&issues=1&name=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto" alt="ChatterBox" width="640" height="320" />
-   </div>
-   <br>
    
    <div>
    
@@ -25,10 +19,6 @@
    ![GitHub contributors](https://img.shields.io/github/contributors/yashksaini-coder/ChatterBox)
    ![GitHub license](https://img.shields.io/github/license/yashksaini-coder/ChatterBox)
    ![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square%29%5D%28http%3A%2F%2Fmakeapullrequest.com%29)
-   
-   </div>
-   ![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square%29%5D%28http%3A%2F%2Fmakeapullrequest.com%29)
-   
    </div>
 </div>
 
