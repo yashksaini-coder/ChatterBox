@@ -1,31 +1,27 @@
-<!-- <div>
-    <a href="https://github.com/yashksaini-coder">
-    <img src="https://socialify.git.ci/yashksaini-coder/Summer-Internship-Project/image?description=1&descriptionEditable=This%20summer%20internship%20project%20provided%20us%20with%20hands-on%20experience%20in%20developing%20a%20real-time%20chat%20application.&font=Raleway&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark" alt="Summer-Internship-Project" width="640" height="320" />
-</div> -->
-
 # 📚💻Summer Internship Project ☀️
 
 This summer internship project provided us with hands-on experience in developing a real-time chat application. We learned to integrate front-end and back-end technologies, manage databases, and implement user authentication, enhancing our practical skills and teamwork.
 
 ---
+## Table of Contents
 
-<!-- ---
-## Index 📖
+- [ChatterBox Project](#chatterbox-project-💬)
+- [Environment](#environment-🌐)
+- [Project Details](#project-details📝)
+   - [Introduction](#introduction)
+   - [Description](#description)
+   - [Objective](#objective)
+- [Project Category & Tools](#project-category--tools)
+   - [Front-end Tools](#front-end-tools)
+   - [Back-end Tools](#back-end-tools)
+- [Module Description](#module-description)
+   - [User Authentication Module](#user-authentication-module)
+   - [Chat Module](#chat-module)
+   - [Settings Module](#settings-module)
+   - [Admin Module](#admin-module)
+- [Conclusion](#conclusion-🏁)
+- [Resources](#resources)
 
-1. **[ChatterBox Project 💬](#chatterbox-project-💬)** 
-2. **[Project Details](#project-details-📝)** :-
-   - [Introduction](#introduction-📚)
-   - [Description](#description-📝)
-   - [Objective](#objective-🎯) 
-3. **[Project Category and Tool](#project-category--tools-🛠️)** :-
-   - [Front-end](#front-end-tools-🖥️)
-   - [Back-end](#back-end-tools-🔧) 
-4. **[Database Design of the Project](#database-design-of-the-project-📊)** 
-5. **[Module Description](#module-description-🧩)** 
-6. **[Conclusion](#conclusion-🏁)** 
-7. **[Resources](#resources-📚)** 
-
---- -->
 
 ## ChatterBox Project 💬
 
@@ -40,6 +36,8 @@ ChatterBox is a real-time chat application designed for seamless communication b
 
 ## Project Details 📝
 
+The ChatterBox project is an ambitious endeavor to create a real-time chat application. This section delves into the intricate details of the project, outlining the technical specifications, design considerations, and the developmental approach. Our goal is to provide a comprehensive overview of the project's scope, including its features, architecture, and the technologies employed.
+
 ### Introduction 📚
 
 The proposed system is designed to be more efficient than traditional communication methods. It includes features such as real-time messaging, notifications, and media sharing. The proposed system is a completely computer-based application. Thousands of messages can be exchanged in real-time without significant delays. The demand for real-time communication applications is growing rapidly in today's digital world.
@@ -50,7 +48,7 @@ The real-time chat application aims to provide seamless communication between us
 
 ### Objective 🎯
 
-The main objective of this project is to develop a scalable and efficient real-time chat application. This includes implementing features like user authentication, message history, and media sharing. The application should be user-friendly and secure, ensuring data privacy and integrity.
+The main objective of this project is to develop a scalable and efficient real-time chat application. This includes implementing features like user authentication, message history, media sharing, and administrative controls. The application should be user-friendly and secure, ensuring data privacy and integrity.
 
 ---
 
@@ -75,18 +73,6 @@ Two basic tools in the project are front end and back end.
 - **Excel**:- Excel, while primarily known as a spreadsheet tool, can be integrated into the backend of a chat application for specific functionalities such as Data Storage, Accessing, Generating report data.
 - **Python**:- It is a versatile programming language known for its simplicity, readability, and vast ecosystem of libraries and frameworks. When used in the backend of a chat application, Python can handle various tasks efficiently.
 - **API**:- Google Gemini API provides access to Google's machine learning and AI capabilities, including natural language processing (NLP), image recognition, and more.
-
----
-
-## Database Design of the Project 📊
-
-### TABLE 1:- USER_DETAILS
-
-| USER_ID | USERNAME         | EMAIL_ID             | PASSWORD      |
-|---------|------------------|----------------------|---------------|
-| 100116  | Deepanshu Antil  | deepanshu16@gmail.com| deepanshu@16  |
-| 100152  | Paras Mutreja    | paras52@gmail.com    | paras@52      |
-| 100191  | Yash Saini       | yashsaini91@gmail.com| yashsaini@19  |
 
 ---
 
@@ -135,16 +121,17 @@ Our real-time chat application meets these demands with features like real-time 
 
 ## Resources 📚
 
-- HTML:- <https:-//developer.mozilla.org/en-US/docs/Web/HTML>
-- CSS:- <https:-//developer.mozilla.org/en-US/docs/Web/CSS>
-- JAVASCRIPT:- <https:-//developer.mozilla.org/en-US/docs/Web/JavaScript>
-- PYTHON:- <https:-//docs.python.org/3.12/tutorial/index.html>
-- FLASK:- <https:-//python-adv-web-apps.readthedocs.io/en/latest/flask.html>
-- GIT:- <https:-//git-scm.com/doc>
-- MONGODB:- <https:-//www.mongodb.com/docs/>
-- API:- <https:-//ai.google.dev/gemini-api/docs>
-- GEEKSFORGEEKS:- <https:-//www.geeksforgeeks.org/>
-- MEDIUM:- <https:-//medium.com/>
-- W3SCHOOLS:- <https:-//www.w3schools.com/>
-- TUTORIALSPOINT:- <https:-//www.tutorialspoint.com/index.htm>
-- STACKOVERFLOW:- <https:-//stackoverflow.com/>
+- HTML:- [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- CSS:- [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- JAVASCRIPT:- [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- PYTHON:- [https://docs.python.org/3.12/tutorial/index.html](https://docs.python.org/3.12/tutorial/index.html)
+- FLASK:- [https://python-adv-web-apps.readthedocs.io/en/latest/flask.html](https://python-adv-web-apps.readthedocs.io/en/latest/flask.html)
+- GIT:- [https://git-scm.com/doc](https://git-scm.com/doc)
+- MONGODB:- [https://www.mongodb.com/docs/](https://www.mongodb.com/docs/)
+- API:- [https://ai.google.dev/gemini-api/docs](https://ai.google.dev/gemini-api/docs)
+- GEEKSFORGEEKS:- [https://www.geeksforgeeks.org/](https://www.geeksforgeeks.org/)
+- MEDIUM:- [https://medium.com/](https://medium.com/)
+- W3SCHOOLS:- [https://www.w3schools.com/](https://www.w3schools.com/)
+- TUTORIALSPOINT:- [https://www.tutorialspoint.com/index.htm](https://www.tutorialspoint.com/index.htm)
+- STACKOVERFLOW:- [https://stackoverflow.com/](https://stackoverflow.com/)
+
