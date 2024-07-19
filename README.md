@@ -1,6 +1,3 @@
-# 📚💻Summer Internship Project ☀️
-
-This summer internship project provided us with hands-on experience in developing a real-time chat application. We learned to integrate front-end and back-end technologies, manage databases, and implement user authentication, enhancing our practical skills and teamwork.
 
 ---
 ## Table of Contents
