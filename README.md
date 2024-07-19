@@ -11,13 +11,17 @@
    ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
    ![GitHub last commit](https://img.shields.io/github/last-commit/yashksaini-coder/ChatterBox)
    ![GitHub issues](https://img.shields.io/github/issues/yashksaini-coder/ChatterBox)
+   ![HTML](https://img.shields.io/badge/HTML-e34c26?style=flat&logo=html5&logoColor=white)
    ![GitHub pull requests](https://img.shields.io/github/issues-pr/yashksaini-coder/ChatterBox)
+   ![Python](https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white)
    ![GitHub forks](https://img.shields.io/github/forks/yashksaini-coder/ChatterBox)
    ![GitHub stars](https://img.shields.io/github/stars/yashksaini-coder/ChatterBox)
+   ![CSS](https://img.shields.io/badge/CSS-563d7c?&style=flat&logo=css3&logoColor=white)
    ![GitHub watchers](https://img.shields.io/github/watchers/yashksaini-coder/ChatterBox)
    ![GitHub contributors](https://img.shields.io/github/contributors/yashksaini-coder/ChatterBox)
    ![GitHub license](https://img.shields.io/github/license/yashksaini-coder/ChatterBox)
    ![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square%29%5D%28http%3A%2F%2Fmakeapullrequest.com%29)
+   ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E)
    </div>
 </div>
 
