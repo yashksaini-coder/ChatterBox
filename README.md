@@ -1,8 +1,22 @@
+<div align="center">
+   
+   ![Repo-Size](https://img.shields.io/github/repo-size/yashksaini-coder/ChatterBox)
+   ![GitHub language count](https://img.shields.io/github/languages/count/yashksaini-coder/ChatterBox)
+   ![GitHub top language](https://img.shields.io/github/languages/top/yashksaini-coder/ChatterBox)
+   ![GitHub last commit](https://img.shields.io/github/last-commit/yashksaini-coder/ChatterBox)
+   ![GitHub issues](https://img.shields.io/github/issues/yashksaini-coder/ChatterBox)
+   ![GitHub pull requests](https://img.shields.io/github/issues-pr/yashksaini-coder/ChatterBox)
+   ![GitHub forks](https://img.shields.io/github/forks/yashksaini-coder/ChatterBox)
+   ![GitHub stars](https://img.shields.io/github/stars/yashksaini-coder/ChatterBox)
+   ![GitHub watchers](https://img.shields.io/github/watchers/yashksaini-coder/ChatterBox)
+   ![GitHub contributors](https://img.shields.io/github/contributors/yashksaini-coder/ChatterBox)
+   ![GitHub license](https://img.shields.io/github/license/yashksaini-coder/ChatterBox)
 
----
+</div>
+
 ## Table of Contents
 
-- [ChatterBox Project](#Chatterbox-Project)
+- [Overview](#overview)
 - [Environment](#environment)
 - [Project Details](#project-details)
    - [Introduction](#introduction)
@@ -21,7 +35,7 @@
 - [Resources](#resources)
 
 
-## ChatterBox Project
+## Overview
 
 ChatterBox is a real-time chat application designed for seamless communication between users. It features instant messaging, media sharing, and real-time notifications to ensure fluid conversations. The front end is built with HTML, CSS, and JavaScript, while the back end uses Flask, MongoDB, and Python. User authentication and administrative controls ensure data privacy and security. This project aims to provide a reliable and user-friendly platform for instant communication.
 
