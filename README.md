@@ -234,10 +234,12 @@ To keep your forked repository up to date with the original repository, follow t
     ```bash
     git push origin your-branch-name
     ```
-
 ---
 
-##  File Structure
+<details>
+   <summary>
+      <h2>File Structure</h2>
+   </summary>
 
    The folder structure of the project is as follows:
    
@@ -325,4 +327,6 @@ To keep your forked repository up to date with the original repository, follow t
     ├─ README.md
     └─ requirements.txt
    ```
+</details>
+
 ---
