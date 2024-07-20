@@ -8,6 +8,8 @@ import re #rejex
 import time
 import google.generativeai as genai
 from markdown import markdown
+
+
 def access_value(number):
     number_str = str(number)
     parts = number_str.split('.')
@@ -17,10 +19,14 @@ def access_value(number):
     result1 = int(fractional_part1)
     l_1=[str(result),str(result1)]
     return l_1
+
+
 def excel_path():
     # path="C:\\Users\\DEEPANSHU\\Documents\\all project\\ChatterBox\\database\\userdata.xlsx"
     path="database\\userdata.xlsx"
     return path
+
+
 def check_email(user_email):
     torf=""
     email_condition="^[a-z]+[\._]?[a-z 0-9]+[@]\w+[.]\w{2,3}$"  
@@ -29,6 +35,8 @@ def check_email(user_email):
     else:
         torf="f"
     return torf
+
+
 def get_user_id():
     path=excel_path()
     data = pd.read_excel(path, engine="openpyxl")
@@ -40,6 +48,8 @@ def get_user_id():
         for index, row in data.iterrows():
             userid=index+1
     return userid
+
+
 def data_check_into_database(fname,lname,email,password):
     check_condition="f"
     try:
@@ -51,6 +61,8 @@ def data_check_into_database(fname,lname,email,password):
     except Exception as e:
         check_condition="Error : "+str(e)
     return check_condition
+
+
 def store_data(user_id,f_name,l_name,email,password,image,currenttime):
     temp_variable=""
     try:
@@ -64,6 +76,8 @@ def store_data(user_id,f_name,l_name,email,password,image,currenttime):
     except zipfile.BadZipFile as e:
         temp_variable="Error : "+str(e)
     return temp_variable
+
+
 def get_user_info(email,password,fname,lname):
     getusername=None
     getuserimage=None
@@ -84,22 +98,33 @@ def get_user_info(email,password,fname,lname):
     except Exception as e:
         getusername="Error : "+str(e)
     return [getusername, getuserimage,list_1,main_user_id,main_user_lastname]
+
 app = Flask(__name__)
 UPLOAD_FOLDER = os.path.join(app.root_path, 'log_file/read_files')
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
+
 @app.route('/')
 def index():
     get_user_id()
     return render_template('index.html')
+
+
 @app.route('/signin', methods=['POST'])
 def signin():
     return render_template('index.html')
+
+
 @app.route('/login', methods=['POST'])
 def login():
     return render_template('login.html')
+
+
 @app.route('/logout', methods=['POST'])
 def logout():
     return render_template('index.html')
+
+
 @app.route('/data', methods=['POST'])
 def userdata():
     try:
@@ -144,9 +169,15 @@ def userdata():
             return render_template('index.html',result=verify) 
     except Exception as e:
         return render_template('index.html',result="Error: " + str(e)) 
+
+
+
 @app.route('/ai', methods=['GET'])
 def ai():
     return render_template('ai_index.html')
+
+
+
 @app.route('/chat_ai', methods=['GET', 'POST'])
 def chat_ai():
     genai.configure(api_key='AIzaSyChm6p9vwr24nt3ouDzJgrzedXiCpjWzM0')
@@ -164,9 +195,14 @@ def chat_ai():
         return jsonify(markdown(gemini_response))
     else:
         return render_template("chats.html")
+    
+    
 @app.route('/message', methods=['GET'])
 def message():
     return render_template('messager.html')
+
+
+
 @app.route('/check-file/<filename>', methods=['GET'])
 def check_file(filename):
     file_path = os.path.join("log_file", filename)
@@ -174,6 +210,9 @@ def check_file(filename):
         return jsonify({'exists': True})
     else:
         return jsonify({'exists': False})
+    
+    
+    
 @app.route('/create-empty-file/<filename>', methods=['POST'])
 def create_empty_file(filename):
     file_path = os.path.join("log_file", filename)
@@ -183,12 +222,18 @@ def create_empty_file(filename):
         return jsonify({'success': True, 'message': f'File {filename} created successfully.'})
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)})
+    
+    
+    
 @app.route('/log_file/<filename>', methods=['GET'])
 def serve_file(filename):
     try:
         return send_from_directory("log_file", filename)
     except FileNotFoundError:
         return jsonify({'error': 'File not found'}), 404
+    
+    
+    
 @app.route('/write-json/<filename>', methods=['POST'])
 def write_json(filename):
     file_path = os.path.join('log_file', filename)
@@ -209,12 +254,21 @@ def write_json(filename):
         return jsonify({'success': True, 'message': f'File {filename} updated successfully.'})
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)}), 500
+    
+    
+    
 @app.route('/log_file/<filename>')
 def serve_json(filename):
     return send_from_directory('log_file', filename)
+
+
+
 @app.route('/report/<filename>')
 def servecoment_json(filename):
     return send_from_directory('report', filename)
+
+
+
 @app.route('/readcomment-json/<filename>', methods=['GET'])
 def readcomment_json(filename):
     file_path = os.path.join("report", filename)
@@ -226,6 +280,9 @@ def readcomment_json(filename):
         return jsonify({'success': True, 'data': data})
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)}), 500
+    
+    
+    
 @app.route('/writecomment-json/<filename>', methods=['POST'])
 def writecomment_json(filename):
     file_path = os.path.join('report', filename)
@@ -244,6 +301,9 @@ def writecomment_json(filename):
         return jsonify({'success': True, 'message': f'File {filename} updated successfully.'})
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)}), 500
+    
+    
+    
 @app.route('/line-count-comment', methods=['GET'])
 def line_count_comment():
     file_name = request.args.get('file')
@@ -253,6 +313,9 @@ def line_count_comment():
         return jsonify(count=count)
     else:
         return jsonify(error="File not found"), 404
+    
+    
+    
 @app.route('/second-last-line-comment', methods=['GET'])
 def second_last_line_comment():
     file_name = request.args.get('file')
@@ -264,6 +327,9 @@ def second_last_line_comment():
         return jsonify(second_last_line=second_last_line)
     else:
         return jsonify(error="File not found"), 404
+    
+    
+    
 @app.route('/readlike-json/<filename>', methods=['GET'])
 def readlike_json(filename):
     file_path = os.path.join("report", filename)
@@ -275,6 +341,9 @@ def readlike_json(filename):
         return jsonify({'success': True, 'data': data})
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)}), 500
+    
+    
+    
 @app.route('/writelike-json/<filename>', methods=['POST'])
 def writelike_json(filename):
     file_path = os.path.join('report', filename)
@@ -293,6 +362,9 @@ def writelike_json(filename):
         return jsonify({'success': True, 'message': f'File {filename} updated successfully.'})
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)}), 500
+    
+    
+    
 @app.route('/line-count-like', methods=['GET'])
 def line_count_like():
     file_name = request.args.get('file')
@@ -302,6 +374,9 @@ def line_count_like():
         return jsonify(count=count)
     else:
         return jsonify(error="File not found"), 404
+    
+    
+    
 @app.route('/second-last-line-like', methods=['GET'])
 def second_last_line_like():
     file_name = request.args.get('file')
@@ -313,6 +388,9 @@ def second_last_line_like():
         return jsonify(second_last_line=second_last_line)
     else:
         return jsonify(error="File not found"), 404
+    
+    
+    
 @app.route('/read-json/<filename>', methods=['GET'])
 def read_json(filename):
     file_path = os.path.join("log_file", filename)
@@ -324,12 +402,18 @@ def read_json(filename):
         return jsonify({'success': True, 'data': data})
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)}), 500
+    
+    
+    
 @app.route('/static/<path:path>')
 def send_static(path):
     return send_from_directory('static', path)
 def count_lines(file_path):
     with open(file_path, 'r') as file:
         return sum(1 for _ in file)
+
+
+
 @app.route('/line-count', methods=['GET'])
 def line_count():
     file_name = request.args.get('file')
@@ -339,6 +423,9 @@ def line_count():
         return jsonify(count=count)
     else:
         return jsonify(error="File not found"), 404
+
+
+
 @app.route('/second-last-line', methods=['GET'])
 def second_last_line():
     file_name = request.args.get('file')
@@ -350,6 +437,9 @@ def second_last_line():
         return jsonify(second_last_line=second_last_line)
     else:
         return jsonify(error="File not found"), 404
+
+
+
 @app.route('/checkdata', methods=['POST'])
 def checkdata():
     fname= request.form['fname']
@@ -364,11 +454,17 @@ def checkdata():
         return render_template('login.html', result="Wrong email or password...")
     else:
         return render_template('login.html', result=verify_value)
+
+
+
 @app.route('/chatterbox', methods=['GET'])
 def chatterbox():
     return render_template('chatterbox.html')
 def get_file_count(folder):
     return len([name for name in os.listdir(folder) if os.path.isfile(os.path.join(folder, name))])
+
+
+
 @app.route('/upload', methods=['POST'])
 def upload_file():
     if 'files' not in request.files:
@@ -389,6 +485,10 @@ def upload_file():
             'path': file_path
         })
     return jsonify({'uploaded_files': uploaded_files}), 200
+
+
+
+
 @app.route('/read_file/<filename>')
 def ser_file(filename):
     return send_from_directory('log_file/read_files', filename)
