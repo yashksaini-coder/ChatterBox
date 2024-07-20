@@ -1,11 +1,10 @@
-from flask import Flask, render_template, request,jsonify,  send_from_directory,redirect, url_for
+from flask import Flask, render_template, request,jsonify,  send_from_directory 
 import pandas as pd
 import datetime
 import json
 import os
 import zipfile
 import re #rejex
-import time
 import google.generativeai as genai
 from markdown import markdown
 
