@@ -53,7 +53,7 @@ Meet our amazing contributors:
    - [Chat Module](#chat-module)
    - [Settings Module](#settings-module)
    - [Admin Module](#admin-module)
-- [Conclusion](#conclusion)
+- [Usage](#usage)
 - [Contributing](#contributing)
    - [Getting Started](#getting-started)
    - [Keeping Your Fork Up to Date](#keeping-your-fork-up-to-date)
