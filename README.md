@@ -131,8 +131,13 @@ To clone the repository and run the Python file, follow these steps:
     ```bash
     pip install -r requirements.txt
     ```
+4. **Set Environment Variables:** Create a `.env` file in the project directory and add the following environment variables: 
+    ```bash
+    GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+    ```
+    This project uses the Gemini API for Text-to-Text chat bot.  Therefore you need to create an account on the Gemini platform and generate an API key to access the Chat bot. Add the following environment variable to the `.env` file.
 
-4. **Run the Python File:** Use the following command to run the Python file:
+5. **Run the Python File:** Use the following command to run the Python file:
 
     ```bash
     python app.py
@@ -145,7 +150,7 @@ To clone the repository and run the Python file, follow these steps:
   <h2><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" width="35" height="35">Ready to Contribute?</h2>
 </div>
 
-Kindly go through [CONTRIBUTING.md](CONTRIBUITING.md) to understand everything from setup to contributing guidelines.
+Kindly go through [CONTRIBUTING.md](CONTRIBUTING.md) to understand everything from setup to contributing guidelines.
 Thank you for your interest in contributing to our project! We welcome contributions from the community to help improve and enhance our work. This guide will walk you through the process of contributing using Git commands. Also, please follow our contribution guidelines, before contributing to the project.
 
 
