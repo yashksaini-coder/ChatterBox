@@ -7,6 +7,9 @@ import zipfile
 import re #rejex
 import google.generativeai as genai
 from markdown import markdown
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def access_value(number):
@@ -179,7 +182,14 @@ def ai():
 
 @app.route('/chat_ai', methods=['GET', 'POST'])
 def chat_ai():
-    genai.configure(api_key='AIzaSyChm6p9vwr24nt3ouDzJgrzedXiCpjWzM0')
+    # Retrieve the API key from environment variables
+    api_key = os.getenv('GEMINI_API_KEY')
+    
+    if not api_key:
+        return "API Key not found. Please check your .env file.", 500
+
+    genai.configure(api_key=api_key)
+    
     model = genai.GenerativeModel('gemini-pro')
     chat_model = model.start_chat(history=[])  
     if request.method == 'POST':
