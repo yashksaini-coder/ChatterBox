@@ -58,8 +58,6 @@ Meet our amazing contributors:
    - [Getting Started](#getting-started)
    - [Keeping Your Fork Up to Date](#keeping-your-fork-up-to-date)
 - [File Structure](#file-structure)
-- [Resources](#resources)
-
 
 ## Overview
 
