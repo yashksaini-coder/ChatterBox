@@ -161,7 +161,7 @@ To contribute to our project, follow these steps:
 2. **Clone the Repository:** Open your terminal and navigate to the directory where you want to clone the repository. Use the following command to clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/yashksaini-coder/ChatterBox
+    git clone https://github.com/your-username/ChatterBox
     ```
 
 3. **Create a New Branch:** Before making any changes, create a new branch to work on. Use the following command to create a new branch:
