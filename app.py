@@ -7,9 +7,9 @@ import zipfile
 import re #rejex
 import google.generativeai as genai
 from markdown import markdown
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 
 def access_value(number):
@@ -183,7 +183,8 @@ def ai():
 @app.route('/chat_ai', methods=['GET', 'POST'])
 def chat_ai():
     # Retrieve the API key from environment variables
-    api_key = os.getenv('GEMINI_API_KEY')
+    #api_key = os.getenv('GEMINI_API_KEY')
+    api_key="sgs"
     
     if not api_key:
         return "API Key not found. Please check your .env file.", 500
