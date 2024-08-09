@@ -1,25 +1,25 @@
 <div align="center">
    <div>
-      <img src="https://socialify.git.ci/yashksaini-coder/ChatterBox/image?forks=1&issues=1&name=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto" alt="ChatterBox" width="640" height="320" />
+      <img src="https://socialify.git.ci/deepanshu414/ChatterBox/image?forks=1&issues=1&name=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto" alt="ChatterBox" width="640" height="320" />
    </div>
    <br>
    
    <div>
    
-   ![Repo-Size](https://img.shields.io/github/repo-size/yashksaini-coder/ChatterBox)
-   ![GitHub language count](https://img.shields.io/github/languages/count/yashksaini-coder/ChatterBox)
+   ![Repo-Size](https://img.shields.io/github/repo-size/deepanshu414/ChatterBox)
+   ![GitHub language count](https://img.shields.io/github/languages/count/deepanshu414/ChatterBox)
    ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
-   ![GitHub last commit](https://img.shields.io/github/last-commit/yashksaini-coder/ChatterBox)
-   ![GitHub issues](https://img.shields.io/github/issues/yashksaini-coder/ChatterBox)
+   ![GitHub last commit](https://img.shields.io/github/last-commit/deepanshu414/ChatterBox)
+   ![GitHub issues](https://img.shields.io/github/issues/deepanshu414/ChatterBox)
    ![HTML](https://img.shields.io/badge/HTML-e34c26?style=flat&logo=html5&logoColor=white)
-   ![GitHub pull requests](https://img.shields.io/github/issues-pr/yashksaini-coder/ChatterBox)
+   ![GitHub pull requests](https://img.shields.io/github/issues-pr/deepanshu414/ChatterBox)
    ![Python](https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white)
-   ![GitHub forks](https://img.shields.io/github/forks/yashksaini-coder/ChatterBox)
-   ![GitHub stars](https://img.shields.io/github/stars/yashksaini-coder/ChatterBox)
+   ![GitHub forks](https://img.shields.io/github/forks/deepanshu414/ChatterBox)
+   ![GitHub stars](https://img.shields.io/github/stars/deepanshu414/ChatterBox)
    ![CSS](https://img.shields.io/badge/CSS-563d7c?&style=flat&logo=css3&logoColor=white)
-   ![GitHub watchers](https://img.shields.io/github/watchers/yashksaini-coder/ChatterBox)
-   ![GitHub contributors](https://img.shields.io/github/contributors/yashksaini-coder/ChatterBox)
-   ![GitHub license](https://img.shields.io/github/license/yashksaini-coder/ChatterBox)
+   ![GitHub watchers](https://img.shields.io/github/watchers/deepanshu414/ChatterBox)
+   ![GitHub contributors](https://img.shields.io/github/contributors/deepanshu414/ChatterBox)
+   ![GitHub license](https://img.shields.io/github/license/deepanshu414/ChatterBox)
    ![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square%29%5D%28http%3A%2F%2Fmakeapullrequest.com%29)
    ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E)
    </div>
@@ -115,7 +115,7 @@ To clone the repository and run the Python file, follow these steps:
 1. **Clone the Repository:** Open your terminal and navigate to the directory where you want to clone the repository. Use the following command to clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/yashksaini-coder/ChatterBox
+    git clone https://github.com/deepanshu414/ChatterBox
     ```
 
 2. **Navigate to the Project Directory:** Use the following command to navigate to the project directory:
@@ -156,12 +156,12 @@ Thank you for your interest in contributing to our project! We welcome contribut
 
 To contribute to our project, follow these steps:
 
-1. **Fork the Repository:** Click on the [Fork](https://github.com/yashksaini-coder/ChatterBox/fork) button at the top right corner of the repository page. This will create a copy of the repository in your GitHub account.
+1. **Fork the Repository:** Click on the [Fork](https://github.com/deepanshu414/ChatterBox/fork) button at the top right corner of the repository page. This will create a copy of the repository in your GitHub account.
 
 2. **Clone the Repository:** Open your terminal and navigate to the directory where you want to clone the repository. Use the following command to clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/ChatterBox
+    git clone https://github.com/deepanshu414/ChatterBox
     ```
 
 3. **Create a New Branch:** Before making any changes, create a new branch to work on. Use the following command to create a new branch:
@@ -194,7 +194,7 @@ To keep your forked repository up to date with the original repository, follow t
 1. **Add the Upstream Remote:** In your terminal, navigate to your local repository and use the following command to add the upstream remote:
 
     ```bash
-    git remote add upstream https://github.com/yashksaini-coder/ChatterBox
+    git remote add upstream https://github.com/deepanshu414/ChatterBox
     ```
 
 2. **Fetch the Latest Changes:** Use the following command to fetch the latest changes from the upstream repository:
