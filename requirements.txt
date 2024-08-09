@@ -6,5 +6,7 @@ itsdangerous==2.2.0
 Jinja2==3.1.4
 MarkupSafe==2.1.5
 Werkzeug==3.0.3
-Pandas==2.0.3
+Pandas==2.2.2
 Openpyxl==3.1.2
+Google-generativeai==0.7.2
+Markdown==3.6
