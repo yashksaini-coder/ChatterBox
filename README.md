@@ -223,7 +223,7 @@ To keep your forked repository up to date with the original repository, follow t
 
    The folder structure of the project is as follows:
    
-    <!-- START_STRUCTURE -->
+<!-- START_STRUCTURE -->
 ```
 ├── CONTRIBUTING.md
 ├── LICENSE
