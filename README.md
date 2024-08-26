@@ -224,7 +224,89 @@ To keep your forked repository up to date with the original repository, follow t
    The folder structure of the project is as follows:
    
     <!-- START_STRUCTURE -->
-    <!-- END_STRUCTURE -->
+```
+├── CONTRIBUTING.md
+├── LICENSE
+├── Project_name.txt
+├── README.md
+├── app.py
+├── database
+│   └── userdata.xlsx
+├── log_file
+│   ├── YashSaini0ParasMutreja1.json
+│   └── read_files
+│       └── github.com_yashksaini-coder_0.png
+├── repo_structure.txt
+├── report
+│   ├── comment.json
+│   └── likecount.json
+├── requirements.txt
+├── static
+│   ├── css
+│   │   ├── all.css
+│   │   ├── all.min.css
+│   │   ├── brands.css
+│   │   ├── brands.min.css
+│   │   ├── chatterbox.css
+│   │   ├── fontawesome.css
+│   │   ├── fontawesome.min.css
+│   │   ├── fontstyle.css
+│   │   ├── regular.css
+│   │   ├── regular.min.css
+│   │   ├── root.css
+│   │   ├── solid.css
+│   │   ├── solid.min.css
+│   │   ├── style.css
+│   │   ├── style1.css
+│   │   ├── svg-with-js.css
+│   │   ├── svg-with-js.min.css
+│   │   ├── v4-font-face.css
+│   │   ├── v4-font-face.min.css
+│   │   ├── v4-shims.css
+│   │   ├── v4-shims.min.css
+│   │   ├── v5-font-face.css
+│   │   └── v5-font-face.min.css
+│   ├── images
+│   │   ├── Default_midshot_celshading_style_centered_image_ultra_detailed_10.jpg
+│   │   ├── LinkedIN1.png
+│   │   └── indexicon.png
+│   ├── js
+│   │   ├── additional.js
+│   │   ├── ai_index.js
+│   │   ├── app.js
+│   │   ├── chatterbox.js
+│   │   ├── data.js
+│   │   ├── home.js
+│   │   ├── load.js
+│   │   └── message.js
+│   ├── main_images
+│   │   ├── aiicon.png
+│   │   ├── backarrow.png
+│   │   ├── flask_gem_avatar.png
+│   │   ├── homeicon.png
+│   │   ├── indexicon.png
+│   │   ├── loginicon.png
+│   │   ├── person_avatar.png
+│   │   └── pexels-pixabay-326055.jpg
+│   └── webfonts
+│       ├── fa-brands-400.ttf
+│       ├── fa-brands-400.woff2
+│       ├── fa-regular-400.ttf
+│       ├── fa-regular-400.woff2
+│       ├── fa-solid-900.ttf
+│       ├── fa-solid-900.woff2
+│       ├── fa-v4compatibility.ttf
+│       └── fa-v4compatibility.woff2
+└── templates
+    ├── ai_index.html
+    ├── chats.html
+    ├── chatterbox.html
+    ├── home.html
+    ├── index.html
+    ├── login.html
+    └── messager.html
+```
+<!-- END_STRUCTURE -->
     
 </details>
 
